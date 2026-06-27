@@ -1,0 +1,35 @@
+// Components
+@import './components/picker-title/picker-title';
+@import './components/picker-subtitle/picker-subtitle';
+@import './components/thumbnails/styles/thumbnails.mobile';
+@import './components/picker-additional-info/picker-additional-info';
+
+.#{$pdp-prefix}-outside_variations {
+  width: 100vw;
+  padding: 0 $andes-spacing-16 $andes-spacing-8;
+  margin-bottom: -$andes-spacing-8;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: color(color_gray_dark);
+  font-weight: $font-weight-semibold;
+
+  a {
+    &,
+    &:visited,
+    &:focus,
+    &:hover {
+      outline: none;
+      color: color(color_gray_dark);
+      text-decoration: none;
+    }
+  }
+
+  &__picker {
+    max-height: 300px;
+  }
+
+  &__items {
+    margin-top: 8px;
+  }
+}

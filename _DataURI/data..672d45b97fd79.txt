@@ -1,0 +1,105 @@
+@import './common';
+
+.#{$pdp-prefix}-header {
+  width: 100%;
+
+  .#{$pdp-prefix}-highlights {
+    margin: 0;
+    margin-bottom: $andes-spacing-8;
+  }
+
+  .ui-pdp-header__container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: $andes-spacing-8;
+    justify-content: space-between;
+
+    .ui-pdp-header__subtitle {
+      margin-bottom: 0;
+      font-size: $font-size-12;
+      display: flex;
+    }
+
+    .ui-pdp-header__product-state {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .ui-pdp-header__tag {
+        font-size: $font-size-12;
+        margin-top: 0;
+      }
+    }
+
+    .ui-pdp-header__product-classification {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .ui-pdp-header__subtitle {
+        margin-bottom: 0;
+        font-size: $font-size-12;
+      }
+    }
+
+    .ui-pdp-header__product-classification .ui-pdp-header__info {
+      padding-top: 0;
+      margin-left: $andes-spacing-20;
+    }
+
+    .ui-pdp-header-subtitle {
+      @include label($font-size-12);
+
+      white-space: pre-wrap;
+    }
+  }
+
+  .ui-pdp-header__bottom-subtitle {
+    margin-top: $andes-spacing-8;
+    font-size: $font-size-12;
+    white-space: pre-wrap;
+
+    /* stylelint-disable-next-line selector-class-pattern */
+    &.ui-pdp-background-color--LIGHT_GRAY {
+      width: fit-content;
+      padding: 2px $andes-spacing-4;
+    }
+  }
+
+  .ui-pdp-header__store {
+    font-size: $font-size-12;
+    color: color(color_gray_middle);
+    font-weight: $font-weight-regular;
+    margin-top: 2px;
+
+    a {
+      font-weight: $font-weight-regular;
+    }
+  }
+
+  &__tag {
+    margin-top: 20px;
+  }
+
+  .#{$pdp-prefix}-title {
+    padding-bottom: 0;
+    font-size: $font-size-16;
+    font-weight: $font-weight-regular;
+  }
+
+  .ui-pdp-subtitle {
+    @include label($font-size-12);
+
+    white-space: pre-wrap;
+  }
+}
+
+.#{$pdp-prefix}-title--fallback-boundary {
+  padding-bottom: 0;
+  padding-left: 16px;
+  margin-top: 8px;
+  font-size: $font-size-16;
+  font-weight: $font-weight-regular;
+}

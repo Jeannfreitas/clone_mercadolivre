@@ -1,0 +1,40 @@
+import { FEATURE_NAMES } from "../constants";
+import { METRICS } from "../../metrics/constants";
+
+export const FEATURE_NAME = FEATURE_NAMES.performance;
+
+export const PERFORMANCE_METRICS = [
+  METRICS.FETCH_TIME,
+  METRICS.WORKER_TIME,
+  METRICS.TOTAL_TIME,
+  METRICS.DOWNLOAD_TIME,
+  METRICS.HEADER_SIZE,
+  METRICS.DNS_LOOKUP_TIME,
+  METRICS.REDIRECT_TIME,
+  METRICS.CPU_CORES,
+  METRICS.RAM_SIZE,
+  METRICS.NETWORK_SPEED,
+  METRICS.NETWORK_RTT,
+  METRICS.DEVICE_PIXEL_RATIO,
+  METRICS.REDIRECT_COUNT,
+  METRICS.DOM_COMPLETE,
+  METRICS.DOM_INTERACTIVE,
+  METRICS.DOM_CONTENT_LOADED_END,
+  METRICS.DOM_CONTENT_LOADED_START,
+  METRICS.DOM_CONTENT_LOADED,
+  METRICS.ONLOAD_END,
+  METRICS.ONLOAD_START,
+  METRICS.ONLOAD,
+  METRICS.REQUEST_START,
+  METRICS.RESPONSE_START,
+  METRICS.RESPONSE_END,
+  METRICS.RESPONSE_TIME,
+];
+
+export const NAVIGATION_TYPES = {
+  navigate: "navigation_type_push",
+  reload: "navigation_type_reload",
+  back_forward: "navigation_type_back_forward",
+  prerender: "navigation_type_prerender",
+  prefetch: "navigation_type_prefetch",
+};

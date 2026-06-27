@@ -1,0 +1,3 @@
+export const MAX_BUFFER_SIZE = 100;
+export const CLEANUP_INTERVAL_MS = 60000;
+export const MIN_PROCESSED_BEFORE_CLEANUP = 50;

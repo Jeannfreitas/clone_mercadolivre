@@ -1,0 +1,33 @@
+"use strict";
+(globalThis.__LOADABLE_LOADED_CHUNKS__ =
+  globalThis.__LOADABLE_LOADED_CHUNKS__ || []).push([
+  [75947],
+  {
+    4084(o, s, e) {
+      e.r(s), e.d(s, { IconBookmark: () => t, default: () => a });
+      var i = e(96540),
+        l = e(46942),
+        n = e.n(l),
+        _ = e(19890),
+        c = e(74848);
+      const r = _.iconList.IconBookmark,
+        t = (o) => {
+          let { className: s = "" } = o;
+          return (0, c.jsx)("svg", {
+            className: n()("ui-pdp-icon ui-pdp-icon--bookmark", s),
+            xmlns: "http://www.w3.org/2000/svg",
+            width: "22",
+            height: "20",
+            viewBox: "0 0 22 20",
+            children: (0, c.jsx)("g", {
+              fillRule: "evenodd",
+              children: (0, c.jsx)("use", { href: `#${r}` }),
+            }),
+          });
+        };
+      t.ICON_ID = r;
+      const a = (0, i.memo)(t);
+    },
+  },
+]);
+//# sourceMappingURL=bookmark.ef105716.js.map
